@@ -1,0 +1,977 @@
+<html>
+
+<head>
+	<title>Prepaid Card T&C</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+	@font-face
+	{
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 100;
+		src: url(Poppins-Regular.ttf);
+		-fs-pdf-font-embed: embed;
+		-fs-pdf-font-encoding: Identity-H;
+	}
+
+	@font-face
+	{
+		font-family: 'Poppins';
+		font-style: italic;
+		font-weight: 100;
+		src: url(Poppins-Italic.ttf);
+		-fs-pdf-font-embed: embed;
+		-fs-pdf-font-encoding: Identity-H;
+	}
+
+	@font-face
+	{
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 500;
+		src: url(Poppins-Medium.ttf);
+		-fs-pdf-font-embed: embed;
+		-fs-pdf-font-encoding: Identity-H;
+	}
+
+	@font-face
+	{
+		font-family: 'Poppins';
+		font-style: italic;
+		font-weight: 500;
+		src: url(Poppins-MediumItalic.ttf);
+		-fs-pdf-font-embed: embed;
+		-fs-pdf-font-encoding: Identity-H;
+	}
+
+	@font-face
+	{
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 700;
+		src: url(Poppins-Bold.ttf);
+		-fs-pdf-font-embed: embed;
+		-fs-pdf-font-encoding: Identity-H;
+	}
+
+	body,
+	table
+	{
+		font-family: 'Poppins', sans-serif;
+		font-weight: 500;
+		font-size: 15pt;
+		color: #444444;
+	}
+
+	p
+	{
+		font-family: 'Poppins', sans-serif;
+		font-size: 15pt;
+		color: rgb(110, 110, 110);
+	}
+
+	h4
+	{
+		margin-bottom: 1em;
+	}
+
+	h1,
+	h4,
+	b,
+	strong,
+	.strong
+	{
+		font-weight: 700;
+		color: #444;
+	}
+
+	.body2
+	{
+		font-size: 0.8em;
+	}
+
+	ul
+	{
+		list-style: none;
+	}
+
+	ol
+	{
+		margin-top: .5em;
+	}
+
+	ol.a
+	{
+		list-style-type: lower-alpha;
+	}
+
+	ol.i
+	{
+		list-style-type: lower-roman;
+	}
+
+	li
+	{
+		margin-bottom: .5em;
+	}
+
+	ul.level-1>li
+	{
+		position: relative;
+		color: rgb(110, 110, 110);
+	}
+
+	ul.level-1>li::before
+	{
+		content: "";
+		z-index: 1;
+		position: absolute;
+		display: inline-block;
+		top: 8px;
+		left: -35px;
+		width: 14px;
+		height: 14px;
+		border-radius: 7px;
+		background-color: rgb(53, 153, 222);
+	}
+
+	hr
+	{
+		border-bottom: 0;
+	}
+
+	a
+	{
+		text-decoration: none;
+		color: #3599de;
+	}
+
+	.accent
+	{
+		color: #3599de
+	}
+
+	.imp
+	{
+		border-left: 3px solid #3599de;
+		border-radius: 2px;
+		font-family: 'Poppins', sans-serif;
+		font-size: 10pt;
+		padding-left: 30;
+		color: rgb(110, 110, 110);
+	}
+
+	.section_title
+	{
+		font-family: 'Poppins', sans-serif;
+		font-size: 15pt;
+		color: rgb(53, 153, 222);
+		font-weight: bold;
+		font-style: normal;
+		text-decoration: none;
+		line-height: 1em;
+		margin-bottom: 0.1em;
+	}
+
+	.gutter-bottom
+	{
+		margin-bottom: .2em;
+	}
+
+	table
+	{
+		width: 95%;
+		border-spacing: 0;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 1em;
+	}
+
+	td
+	{
+		padding: 0;
+	}
+
+	table.row td:nth-child(2)
+	{
+		text-align: right;
+	}
+
+	.block
+	{
+		margin-top: 0.1em;
+		margin-bottom: 0.1em;
+	}
+
+	.content-table
+	{
+		border-collapse: collapse;
+		border: 1px solid rgb(110, 110, 110);
+		margin: 25px 0;
+		font-family: 'Poppins', sans-serif;
+		font-size: 10pt;
+		text-align: left;
+		border-radius: 7px 7px 7px 7px;
+		overflow: hidden;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+		width: 95%;
+	}
+
+	.content-table th,
+	.content-table td
+	{
+		padding: 5px 5px;
+		color: rgb(110, 110, 110);
+	}
+
+	.content-table caption
+	{
+		background-color: rgb(57, 134, 235);
+		color: white;
+		font-size: 8pt;
+		padding: 5px 5px;
+	}
+
+	.content-table tbody tr
+	{
+		border-bottom: 1px solid #dddddd;
+	}
+
+	.content-table tbody tr:last-of-type
+	{
+		padding: 5px 5px;
+	}
+
+	.content-table thead tr
+	{
+		background-color: rgb(142, 167, 199);
+		color: rgb(20, 136, 212);
+		text-align: left;
+		font-size: 8pt;
+	}
+
+	.smal
+	{
+		position: relative;
+		font-size: 12pt;
+		color: rgb(110, 110, 110);
+	}
+
+	#footer
+	{
+		position: running(footer);
+		text-align: center;
+		font-size: .8em;
+		font-weight: 400;
+	}
+
+	@page
+	{
+		@bottom-center
+		{
+			content: element(footer);
+		}
+	}
+
+	@media print
+	{
+		body
+		{
+			page-break-before: avoid;
+			page-break-after: avoid;
+		}
+	}
+	</style>
+</head>
+
+<body>
+	<h1>VISA® Virtual Accountholder Agreement</h1>
+	<p class="accent">Last Updated: 28/02/2022</p>
+	<div class="block">
+		<strong>Summary of Fees for Quilo Visa Virtual Prepaid Card</strong>
+	</div>
+	<hr />
+	<div class="block">
+		<table class="row">
+			<tr>
+				<td>Monthly fee</td>
+				<td class="strong">$0 </td>
+			</tr>
+		</table>
+	</div>
+	<div class="block">
+		<table class="row">
+			<tr>
+				<td>Per purchase</td>
+				<td class="strong">$0 </td>
+			</tr>
+		</table>
+	</div>
+	<div class="block">
+		<table class="row">
+			<tr>
+				<td>ATM Withdrawal</td>
+				<td class="strong">N/A </td>
+			</tr>
+		</table>
+	</div>
+	<div class="block">
+		<table class="row">
+			<tr>
+				<td>Cash reload</td>
+				<td class="strong">N/A </td>
+			</tr>
+		</table>
+	</div>
+	<hr />
+	<div class="block">
+		<table class="row">
+			<tr>
+				<td>ATM balance inquiry </td>
+				<td class="strong">N/A </td>
+			</tr>
+			<tr>
+				<td><sup class="smal">in-network or out-of-network</sup>
+				</td>
+				<td class="strong">&nbsp </td>
+			</tr>
+		</table>
+	</div>
+	<div class="block">
+		<table class="row">
+			<tr>
+				<td>Customer service </td>
+				<td class="strong">$0 </td>
+			</tr>
+			<tr>
+				<td><sup class="smal">in-network or out-of-network</sup>
+				</td>
+				<td class="strong">&nbsp </td>
+			</tr>
+		</table>
+	</div>
+	<div class="block">
+		<table class="row">
+			<tr>
+				<td>Inactivity</td>
+				<td class="strong">$0 per month</td>
+			</tr>
+		</table>
+	</div>
+	<hr />
+	<p>We charge no other types of fees. </p>
+	<p>No overdraft/credit feature.</p>
+	<p>Your funds are FDIC insured up to the maximum allowed by law.</p>
+	<p>For general information about prepaid accounts, visit <a
+			href="http://cfpb.gov/prepaid">cfpb.gov/ prepaid</a>.</p>
+	<p>Find details and conditions for all fees and services in the
+		accountholder agreement.</p>
+	<div class="block">
+		<table class="content-table">
+			<caption style="text-align:center"> List of all fees for Quilo Visa
+				Virtual Prepaid Card</caption>
+			<thead>
+				<tr>
+					<td>All Fees</td>
+					<td>Amount</td>
+					<td>Details</td>
+				</tr>
+			</thead>
+			<tr>
+				<td colspan="3">
+					<strong>Monthly Usage</strong>
+				</td>
+			</tr>
+			<tr>
+				<td>Monthly fee</td>
+				<td>$0</td>
+				<td>Monthly fee</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<strong>Spend Money</strong>
+				</td>
+			</tr>
+			<tr>
+				<td>Purchases</td>
+				<td>$0</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<strong>Information</strong>
+				</td>
+			</tr>
+			<tr>
+				<td>Customer service (automated or live agent)</td>
+				<td>$0</td>
+				<td>No fee for contacting our customer service, including for
+					balance inquiries </td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<strong>Other</strong>
+				</td>
+			</tr>
+			<tr>
+				<td>Inactivity</td>
+				<td>$0</td>
+				<td>If there has been no activity on your Virtual Account for a
+					period of 90 days we will refund any remaining available
+					balance.</td>
+			</tr>
+			<tr>
+				<td>Account close fee </td>
+				<td>$0</td>
+			</tr>
+		</table>
+	</div>
+	<p>Your funds will be held at or transferred to South State Bank, N.A., an
+		FDIC-insured institution. Once there, your funds are insured up to
+		$250,000 by the FDIC in the event that South State Bank, N.A. fails, if
+		specific deposit requirements are met. See <a
+			href="http://fdic.gov/deposit/deposits/prepaid.html">fdic.gov/deposit/
+			deposits/ prepaid.html</a> for details. </p>
+	<p>No overdraft/credit feature. Contact South State Bank, N.A. by calling
+		888-743-8863, by mail at PO Box 1069, Chattanooga, TN 37401, or visit
+		the Quilo app. </p>
+	<p>For general information about prepaid accounts, visit <a
+			href="http://cfpb.gov/prepaid">cfpb.gov/ prepaid</a>.</p>
+	<p>If you have a complaint about a prepaid account, call the Consumer
+		Financial Protection Bureau at 1-855-411-2372 or visit <a
+			href="http://cfpb.gov/complaint">cfpb.gov/ complaint</a>.</p>
+	<p class="imp">You are responsible for safeguarding your account number </p>
+	<p>Your Virtual Account may only be used for authorized purchases
+		denominated in U.S. dollars (the “Transaction”) on the Internet,
+		in-person via a keyed-in transaction or with mail or telephone orders,
+		and only with United States merchants permitted by ${CFI_NAME} (the
+		“Program Sponsor”). If there has been no activity on your Virtual
+		Account for a period of ninety (90) days we will refund any remaining
+		available balance as may be permitted in this Agreement. </p>
+	<p>These terms and conditions of use and Virtual Accountholder Agreement
+		(this “Agreement”) constitute our disclosure to you and an agreement
+		between you and us with respect to our issuance and your use of the
+		Quilo Visa Virtual Account (“Virtual Account”). The Virtual Account is
+		not issued in plastic or tangible form, but represents your right to
+		access prepaid funds deposited with South State Bank, N.A. by your
+		Program Sponsor. Using the Virtual Account, you can access your prepaid
+		funds everywhere Visa debit is accepted on the Internet, in person via a
+		keyed-in transaction or with mail or telephone orders </p>
+	<p>In this Agreement, “you” or “your” means any person who is authorized to
+		use your Virtual Account as provided for in this Agreement, and “we”,
+		“us” or “our” means South State Bank, N.A. and its successors and
+		assigns. By using the Virtual Account, you agree with us that the
+		Virtual Account, and the money or funds stored in the Virtual Account,
+		are subject to this Agreement. </p>
+	<p class="imp">Please read this agreement carefully and keep it for future
+		reference</p>
+	<p>The Virtual Account is issued by South State Bank, N.A. pursuant to a
+		license from Visa U.S.A., Inc. It is only offered to individuals 18
+		years of age and older that can lawfully enter into and form contracts
+		under applicable law, and by using the Virtual Account you represent and
+		warrant to us that you are such an individual.</p>
+	<p>We may refuse to activate the Virtual Account for anyone for any reason.
+		The Virtual Account is our property and we may revoke the Virtual
+		Account at any time without cause or notice, especially if there is
+		suspicious activity. You may not use an expired or revoked Virtual
+		Account.</p>
+	<div class="section_title">Section 1 </div>
+	<div class="block">
+		<strong>Contact information</strong>
+	</div>
+	<p><strong>South State, NA</strong>
+	</p>
+	<p><strong>Address:</strong><br />PO Box 1069, Chattanooga, TN 37401
+	<p>
+	<p><strong>Phone:</strong><br />888-743-8863 </p>
+	<div class="section_title">Section 2 </div>
+	<div class="block">
+		<strong>Business Days</strong>
+	</div>
+	<p>Our business days are Monday through Friday. Holidays are not included
+	</p>
+	<div class="section_title">Section 3 </div>
+	<div class="block">
+		<strong>Your virtual account</strong>
+	</div>
+	<p>There is no separate deposit account established for you that is
+		associated with the Virtual Account. There is a limited purpose prepaid
+		account in which the funds that are stored on the Virtual Account are
+		maintained. You have no rights in those funds, except to access the
+		funds through the Virtual Account in accordance with this Agreement. You
+		may not make any deposit, withdrawal or any other transaction with the
+		Virtual Account or the prepaid account, except for the Virtual Account
+		transactions described in this Agreement. </p>
+	<p class="imp">The account in which the prepaid funds are deposited is
+		FDIC-insured to the maximum extent permitted by law.</p>
+	<p>For information with respect to FDIC insurance on your prepaid funds,
+		visit <a href="www.fdic.gov/deposit/">www.fdic.gov/ deposit/</a>.</p>
+	<div class="section_title">Section 4 </div>
+	<div class="block">
+		<strong>Consent to electronic delivery</strong>
+	</div>
+	<p>Your Virtual Account and corresponding services are provided through the
+		CNBT Quilo (“the Quilo App”). You understand and agree that the
+		following categories of information (“Electronic Disclosures”) will be
+		provided by electronic means:</p>
+	<ul class="level-1">
+		<li>This Agreement</li>
+		<li>Legal disclosures</li>
+		<li>Privacy Policy</li>
+		<li>Notices with respect to any changes to the Virtual Accountholder
+			Agreement or any other notices or communications required or
+			permitted by law </li>
+		<li>Inquiries or notices to you about transactions made using your
+			Virtual Account </li>
+		<li>Any customer service communications</li>
+	</ul>
+	<p>Accountholder Agreement or any other notices or communications required
+		or permitted by law </p>
+	<ul class="level-1">
+		<li>Inquiries or notices to you about transactions made using your
+			Virtual Account. </li>
+		<li>Any customer service communications.</li>
+	</ul>
+	<p>To receive your Electronic Disclosures, you must have access to the
+		following hardware and software requirements: </p>
+	<ul class="level-1">
+		<li>A mobile smartphone with a valid U.S. phone number and supporting
+			iOS or Android operating system;</li>
+		<li>The Quilo App;</li>
+		<li>An e-mail account and e-mail reader software capable of handling
+			HTML email;</li>
+		<li>A printer capable of printing from your mobile smartphone, browser
+			and email software. </li>
+	</ul>
+	<p>You also have the right to receive a paper copy of any Electronic
+		Disclosures by sending a request to us. Your request should specify the
+		Electronic Disclosure that you would like us to send and provide your
+		name, address and Virtual Account number. Call toll free 888-743-8863,
+		or write to: South State, NA PO Box 1069, Chattanooga, TN 37401, or
+		email custserv@transcard.com </p>
+	<div class="section_title">Section 5 </div>
+	<div class="block">
+		<strong>Using your virtual account</strong>
+	</div>
+	<p>You may use your Virtual Account only after it is activated and virtually
+		delivered. A Visa debit Virtual Account number and an expiration date
+		will be established for you. This information will be encrypted and
+		delivered to you virtually and securely via the Quilo App. No physical
+		card will be delivered. Value will be loaded in the Virtual Account by
+		your Program Sponsor. The balance available for authorizing transactions
+		with your Virtual Account is the lesser of your available balance in
+		your Virtual Account or any dollar limitation disclosed for the
+		transaction being performed. Upon any purchase or other transaction, the
+		amount available in the Virtual Account will be reduced by the amount of
+		such withdrawal or purchase.</p>
+	<p>You are responsible for all authorized transactions using your Virtual
+		Account. You do not have the right to stop payment on any purchase
+		transaction originated by use of your Virtual Account. </p>
+	<div class="block">
+		<strong>Limitations on Using Your Virtual Account.</strong>
+	</div>
+	<p>Your virtual account may only be used for purchases consistent with this
+		agreement. You may use your virtual account wherever visa is accepted,
+		however the virtual account cannot be used for: </p>
+	<ul class="level-1">
+		<li>Any purchase where a physical card must be handed to a merchant for
+			payment; </li>
+		<li>Any transaction that requires in person presentment of a physical
+			debit or credit card;</li>
+		<li>"Dual mode" transactions (e.g., theatre ticket purchases, hotel
+			stays, car rentals, online purchases picked up in person, and other
+			transactions where subsequent presentment of a physical debit or
+			credit card bearing the same account number as the virtual account
+			used to purchase the item over the internet is required in order to
+			obtain the item). </li>
+	</ul>
+	<p>You may use your Virtual Account only in the manner and for the purposes
+		authorized by this Agreement. You may not use your Virtual Account for
+		any illegal purpose. You may not use your Virtual Account to initiate
+		any type of electronic gambling transaction through the Internet. We may
+		restrict access to your Virtual Account if we notice suspicious
+		activities. If access is denied, you should contact us so that we can
+		discuss and rectify any problems, or we may notify you via a Quilo App
+		notification or via SMS. </p>
+	<p>You may not use your Virtual Account to make a purchase in excess of the
+		amount of prepaid funds available for use with your Virtual Account
+		(minus any value that is subject to a hold due to authorization). If for
+		any reason a purchase occurs that exceeds the value on the Virtual
+		Account, you are responsible for repaying us in full. We may
+		automatically deduct any amount you owe under this Agreement from any
+		future transfer of value to the Virtual Account. If we are required to
+		undertake legal proceedings against you because you fail to comply with
+		the terms of this Agreement, you must pay our reasonable attorneys’ fees
+		and other costs of the proceedings. Your responsibility for fees and
+		costs shall in no event exceed the maximum amount allowed by law </p>
+	<div class="block">
+		<strong>Authorizations and Holds.</strong>
+	</div>
+	<p>Any entity honoring your Virtual Account will be required to obtain
+		approval or authorization for any transaction in accordance with the
+		rules of Visa U.S.A., Inc. When an authorization is issued, a thirty-day
+		hold may be placed on the value on the Virtual Account in the amount of
+		the authorization. When you use your Virtual Account in a tipping
+		environment (at restaurants, bars, barber or beauty shops or for taxis
+		or limos), the amount of authorization may include a tip of 20%-25%. Up
+		to a ninety-day hold may be placed on the value on the Virtual Account
+		in the amount of the preauthorization request made by hotels and rental
+		merchants. If the authorization request varies from the amount of the
+		transaction the merchant subsequently submits to the Visa system,
+		settlement of the transaction may not remove the hold, which may remain
+		on the Virtual Account until the hold days have expired. If your Virtual
+		Account is subject to a hold, the value on the Virtual Account that is
+		subject to the hold will not be available for other purposes. </p>
+	<div class="block">
+		<strong>Account Loading.</strong>
+	</div>
+	<p>You may not reload your Virtual Account. Only the Program Sponsor may
+		reload your Virtual Account.</p>
+	<div class="block">
+		<strong>Virtual Account Expiration.</strong>
+	</div>
+	<p>Your Virtual Account will expire on the date provided to you when you
+		received your Virtual Account number. </p>
+	<div class="block">
+		<strong>Refund of Remaining Available Balance For Inactivity.</strong>
+	</div>
+	<p>If there is any Available Balance remaining in your Virtual Account after
+		ninety (90) days of inactivity, or if we are otherwise required by
+		applicable law to refund to you any funds in your Virtual Account, we
+		will refund the funds to you by transferring such funds to your account
+		with the Program Sponsor. Your Virtual Account will remain open and
+		available for future deposits. </p>
+	<div class="section_title">Section 6 </div>
+	<div class="block">
+		<strong>Disclosure of virtual account information to third
+			parties.</strong>
+	</div>
+	<p>We will disclose information to third parties about your Virtual Account
+		or the transactions you make:</p>
+	<ul class="level-1">
+		<li>Where it is necessary for completingthe transactions; </li>
+		<li>Where there has been unauthorizeduse of your Virtual Account;</li>
+		<li>In order to comply with governmentagency or court orders;</li>
+		<li>For analytical purposes; </li>
+		<li>If we conclude that disclosure isnecessary to protect you or
+			ourinterests; </li>
+		<li>If you give your permission to us or toother parties. </li>
+	</ul>
+	<p>In addition, Virtual Accountholder information, if we receive it from
+		you, may be provided to Visa for the purposes of providing certain
+		services, including emergency cash or emergency Virtual Account number
+		replacement. Our Privacy Policy is available at <a
+			href="http://SouthStateBank.com/privacy">http://SouthStateBank.com/
+			privacy</a>. Just click on “Privacy & Legal” at the bottom of the
+		home page.</p>
+	<div class="section_title">Section 7 </div>
+	<div class="block">
+		<strong>Obtaining account information.</strong>
+	</div>
+	<p>You may obtain information about the amount of money you have remaining
+		in your Virtual Account by calling 888-743-8863. This information, along
+		with a 12-month history of account transactions, is also available via
+		the Quilo App. </p>
+	<p> You also have the right to obtain at least 24 months of written history
+		of Virtual Account transactions by calling 888-743-8863 or via the Quilo
+		App. </p>
+	<p class="imp">You will not be charged a fee for this information unless you
+		request it more than once per month.</p>
+	<div class="section_title">Section 8 </div>
+	<div class="block">
+		<strong>Error resolution.</strong>
+	</div>
+	<p>In case of errors or questions about your Virtual Account or if any
+		electronic statement shows transactions that you did not make, call us
+		as soon as you can at Phone: 888-743-8863 or write us at: PO Box 1069,
+		Chattanooga, TN 37401</p>
+	<p>We must allow you to report an error until 60 days after the earlier of
+		the date you electronically access your account, if the error could be
+		viewed in your electronic history, or the date we sent the FIRST written
+		history on which the error appeared. You may request a written history
+		of your transactions at any time by calling us at 888-743-8863 or via
+		the Quilo App.</p>
+	<ul class="level-1">
+		<li>Tell us your name and Virtual Account number.</li>
+		<li>Describe the error or the transaction you are unsure about, and
+			explain as clearly as you can why you believe it is an error or why
+			you need more information.</li>
+		<li>Tell us the dollar amount of the suspected error.</li>
+	</ul>
+	<p>If you tell us orally, we may require that you send your complaint or
+		question in writing within 10 business days. We will generally tell you
+		the results of our investigation within 10 business days after we hear
+		from you. If we need more time, however, we may take up to 45 days to
+		investigate your complaint or question. If we decide to do this, we will
+		credit your account within 10 business days for the amount you think is
+		in error, so that you will have the money during the time it takes us to
+		complete our investigation. If we ask you to put your complaint or
+		question in writing and we do not receive it within 10 business days, we
+		may not credit your account.</p>
+	<p>For errors involving new accounts or pointof-sale, we may take up to 90
+		days to investigate your complaint or question. For new accounts, we may
+		take up to 20 business days to credit your account for the amount you
+		think is in error. We will tell you the results within three business
+		days after completing our investigation. If we decide that there was no
+		error, we will send you a written explanation. You may ask for copies of
+		the documents that we used in our investigation. </p>
+	<div class="section_title">Section 9 </div>
+	<div class="block">
+		<strong>Your liability for unauthorized use.</strong>
+	</div>
+	<p>If you believe that your virtual account number has been stolen, or that
+		someone has transferred or may transfer money from your virtual account
+		without your permission, contact us at once via the quilo app.
+		Otherwise, you can call us tollfree at 888-743-8863. If your Virtual
+		Account Number has been stolen, we will close your Virtual Account to
+		minimize losses. While we are happy to answer your questions about
+		transactions, please remember that you are responsible for all
+		transactions and fees incurred by you or any other person you have
+		authorized to have access to your Virtual Account number and code.</p>
+	<div class="section_title">Section 10</div>
+	<div class="block">
+		<strong>Bank liability.</strong>
+	</div>
+	<p>If we do not complete a transfer to or from your Virtual Account on time
+		or in the correct amount according to our Agreement with you, we will be
+		liable for your losses or damages. However, there are some exceptions.
+		We will not be liable, for instance: </p>
+	<ul class="level-1">
+		<li>If through no fault of ours, a merchant refuses to honor your
+			Virtual Account.</li>
+		<li>If through no fault of ours, you do not have enough money available
+			in your Virtual Account to make the withdrawal or purchase.</li>
+		<li>If the system was not working properly and you knew about the
+			breakdown when you started the transaction.</li>
+		<li>If circumstances beyond our control (such as flood or fire or an act
+			of war or an event of terrorism) prevent the transfer, despite
+			reasonable precautions that we have taken.</li>
+		<li>There may be other applicable exceptions.</li>
+	</ul>
+	<div class="section_title">Section 11</div>
+	<div class="block">
+		<strong>Systems unavailability.</strong>
+	</div>
+	<p>The electronic transfer functionality and/ or electronic statements may
+		not be available when systems require maintenance or upgrades or major
+		unforeseen events occur, such as earthquakes, fires, floods, computer
+		failures, interruptions in telephone service, electrical outages, civil
+		unrest or riots, war, or acts or threatened acts of terrorism or other
+		circumstances beyond our control. We have no liability for interruptions
+		or delays in services due to systems unavailability</p>
+	<div class="section_title">Section 12</div>
+	<div class="block">
+		<strong>Miscellaneous.</strong>
+	</div>
+	<p></p>
+	<div class="block">
+		<strong>Disclaimer of Liability.</strong>
+	</div>
+	<p>In providing the Virtual Account and related services to you, we disclaim
+		any duty or responsibility other than those expressly set forth in this
+		Agreement</p>
+	<div class="block">
+		<strong>Amendment.</strong>
+	</div>
+	<p>We can change this Agreement, including all fees, at any time, and such
+		changes will be binding on you. If required by law, we will post notice
+		of the change on our web site prior to the effective date of the change.
+		However, if the change is made for security purposes or as a result of
+		changes in fees, changes or costs imposed by any party other than us, we
+		can implement it without prior notice. Your use of the Virtual Account
+		constitutes acceptance of any amendment implemented by us.</p>
+	<div class="block">
+		<strong>Our Right to Set-Off.</strong>
+	</div>
+	<p>If you ever owe us money as a borrower, guarantor, or otherwise, and it
+		becomes due, we have the right under the law (called set-off) to use the
+		money from your account to pay the debt. We may charge against any of
+		your accounts any debt you owe us, now or in the future, without going
+		through any legal process or court proceedings.</p>
+	<div class="block">
+		<strong>Termination.</strong>
+	</div>
+	<p>We reserve the right to terminate this Agreement or any of the services
+		that are described herein. If we discontinue honoring your Virtual
+		Account, you should call us at 866-883-0180 for further instructions.
+		You may, at any time, terminate this Agreement, or any of the services
+		to which you subscribe by giving us written notice. Termination will not
+		affect any of our rights or your obligations arising under this
+		Agreement prior to termination.</p>
+	<div class="block">
+		<strong>Assignment.</strong>
+	</div>
+	<p>You may not transfer or assign this Agreement to any other person without
+		our prior written consent. We may assign our obligations to you under
+		this Agreement without your consent or notice to you.</p>
+	<div class="block">
+		<strong>Severability/No Waiver.</strong>
+	</div>
+	<p>If any provision of this Agreement is deemed unlawful, void, or for any
+		reason unenforceable, then that provision shall be deemed severable from
+		this Agreement and shall not affect the validity and enforceability of
+		any remaining provisions.</p>
+	<div class="block">
+		<strong>Applicable Law.</strong>
+	</div>
+	<p>This Agreement is governed by applicable federal laws, rules and
+		regulations. To the extent federal law is not applicable, the laws of
+		the State of Florida govern this Agreement. In the event of any conflict
+		between the provisions of this Agreement and any applicable law or
+		regulation, this Agreement will be deemed modified to the extent
+		necessary to comply with such law or regulation.</p>
+	<div class="block">
+		<strong>Waiver.</strong>
+	</div>
+	<p>We may waive any of the provisions or conditions of this Agreement, but
+		any such waiver will be effective only on that occasion and will not be
+		a continuing waiver or a waiver on any other occasion. We can delay
+		enforcement of any of our rights under this Agreement without losing
+		them.</p>
+	<div class="section_title">Section 13</div>
+	<div class="block">
+		<strong>Arbitration.</strong>
+	</div>
+	<p class="imp">Please read this carefully.</p>
+	<p>You agree that any dispute will be resolved by binding arbitration.
+		Arbitration replaces the right to go to court, including the right to a
+		jury and the right to participate in a class action or similar
+		proceeding. In arbitration, a dispute is resolved by an arbitrator
+		instead of a judge or jury. Arbitration procedures are simpler and more
+		limited than court procedures. You also agree any arbitration will be
+		limited to the dispute between you and us and will not be part of a
+		class-wide or consolidated arbitration proceeding.</p>
+	<div class="block">
+		<strong>Agreement to Arbitrate..</strong>
+	</div>
+	<p>You and we agree that any dispute will be resolved by arbitration. This
+		Agreement is governed by the Federal Arbitration Act (FAA), 9 USCS § 1
+		et seq. and the substantive law of the state of Florida.</p>
+	<div class="block">
+		<strong>Definitions.</strong>
+	</div>
+	<p>Arbitration is a means of having an independent third party resolve a
+		dispute. A “dispute” is any controversy or claim between you and us. The
+		term dispute is to be given its broadest possible meaning and includes,
+		without limitation, all claims or demands (whether past, present or
+		future, including events that occurred prior to the opening of this
+		account), based on any legal or equitable theory (tort, contract or
+		otherwise), and regardless of the type of relief sought (i.e. money,
+		injunctive relief or declaratory relief). A dispute includes, by way of
+		example and without limitation, any claim based upon federal or state
+		constitution, statute, ordinance, regulation, or common law, and any
+		issue concerning the validity, enforceability or scope of this
+		arbitration agreement. The term “you” includes any authorized user and
+		also your heirs, guardian, personal representative or trustee in
+		bankruptcy. The term “us” includes our employees, officers, directors,
+		attorneys, affiliated companies, predecessors and assigns, as well as
+		our marketing, servicing and collection representatives and agents.</p>
+	<div class="block">
+		<strong>Selection of Arbitrator.</strong>
+	</div>
+	<p>If a dispute arises, the party asserting the claim or defense must
+		initiate arbitration, provided you or we may first try to resolve the
+		matter informally or through customary business methods, including
+		collection activity. The party filing arbitration may initiate and
+		pursue the matter with the American Arbitration Association (“AAA”) or
+		JAMS, The Resolution Experts or we may agree upon a different arbitrator
+		described below. If you claim you have a dispute with us, but do not
+		initiate arbitration or select an arbitrator, we may do so. You may
+		obtain copies of the current rules of arbitration and forms and
+		instructions for initiating arbitration by contacting them as follows:
+	</p>
+	<ul class="level-1">
+		<li> American Arbitration Association, 335 Madison Avenue, Floor 10, New
+			York, NY 10017-4605<br> Website: <a
+				href="http://www.adr.org">www.adr.org</a>
+		</li>
+		<li> JAMS, The Resolution Experts, 1920 Main Street, Suite 300, Irvine,
+			CA 92614,<br> Website: <a
+				href="http://www.jamsadr.com">www.jamsadr.com</a><br> or by
+			phone at (949) 224-1810 or (800) 352-5267. </li>
+	</ul>
+	<p>The policies and procedures of the arbitrator will apply provided that
+		they are consistent with this arbitration agreement. To the extent the
+		arbitrator’s rules or procedures are different than the terms of this
+		arbitration agreement, the terms of this arbitration agreement shall
+		apply. If either of the arbitration firms are not available to
+		adjudicate the matter, or if the neither is convenient or acceptable to
+		you, you and we may agree on one or more neutral arbitrators. If you and
+		we cannot agree on arbitrator(s), an arbitrator will be appointed by a
+		court with jurisdiction over the matter pursuant to the FAA.</p>
+	<div class="block">
+		<strong>Cost of Arbitration.</strong>
+	</div>
+	<p>We will pay the filing fee and any costs or fees charged by the
+		arbitrator regardless of whether you or we initiate the arbitration.
+		Except where otherwise provided by applicable law, each party will be
+		responsible for its own attorneys’ fees and other expenses. Unless
+		prohibited by law, the arbitrator may award fees, costs and reasonable
+		attorneys’ fees to the party who substantially prevails in the
+		arbitration.</p>
+	<div class="block">
+		<strong>Place of Arbitration.</strong>
+	</div>
+	<p>Unless you and we agree to a different location, the arbitration will be
+		held in the same city as the U.S. District Court closest to your
+		then-current mailing address. The arbitrator may decide the matter based
+		upon written submissions by the parties if permitted under the
+		arbitration rules.</p>
+	<div class="block">
+		<strong>Waiver of Rights.</strong>
+	</div>
+	<p>You are waiving your right to a jury trial, to have a court decide your
+		dispute, to participate in a class action lawsuit and to certain
+		discovery and other procedures that are available in a lawsuit. The
+		arbitrator has the ability to award all remedies available by statute,
+		at law or in equity to the prevailing party. You and we agree that the
+		arbitrator has no authority to conduct class-wide proceedings and will
+		be restricted to resolving the individual disputes between you and us.
+		If an arbitration firm or arbitrator fails or refuses to enforce the
+		waiver of class-wide arbitration, then the dispute will proceed in
+		court. The validity, effect and enforceability of this waiver of class
+		action lawsuit and class-wide arbitration is to be determined solely by
+		a court of competent jurisdiction and not by the arbitration firm or
+		arbitrator. If such court refuses to enforce the class-wide arbitration
+		waiver, then it is agreed the dispute will proceed in court rather than
+		arbitration.</p>
+	<div class="block">
+		<strong>Review of Arbitration Award.</strong>
+	</div>
+	<p>The arbitrator shall apply applicable federal and Florida substantive law
+		and the terms of your Agreement with us. The arbitrator shall make
+		written findings and the arbitrator’s award may be filed with any court
+		having jurisdiction. The arbitration award shall be supported by
+		substantial evidence and must be consistent with your Agreement with us
+		and applicable law or may be set aside by a court upon judicial review.
+	</p>
+	<div class="block">
+		<strong>Other Provisions.</strong>
+	</div>
+	<p>If any portion of this arbitration agreement is subsequently deemed
+		unenforceable, the enforceability of any other provision of this
+		arbitration agreement shall not be affected and the unenforceable term
+		shall be amended such that it is enforceable to the maximum extent
+		permitted by law provided that if a class action litigation or a
+		class-wide arbitration is permitted for any reason, either party may
+		require that the entire dispute be heard by a Judge, sitting without a
+		jury, under applicable court rules and procedures. This arbitration
+		provision shall survive: </p>
+	<ul class="level-1">
+		<li>Termination or changes in your Agreement with us, your Virtual
+			Account, or the relationship between you and us concerning your
+			Virtual Account;</li>
+		<li>The bankruptcy of any party; </li>
+		<li>Any transfer, sale or assignment of the Virtual Account, or any
+			amounts owed on the Virtual Account, to any other person or entity
+		</li>
+	</ul>
+	<div class="block">
+		<strong>Right to Opt-Out.</strong>
+	</div>
+	<p>If you do not wish to agree to arbitrate all disputes with us, you must
+		advise us in writing through the Quilo App within thirty (30) days of
+		you electronically agreeing to this Agreement.</p>
+	<hr />
+</body>
+
+</html>
